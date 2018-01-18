@@ -9,15 +9,19 @@
 
     <link href="{{site.url}}{{site.baseurl}}/css/head.css" rel='stylesheet' type="text/css"/>
     <link href="{{site.url}}{{site.baseurl}}/css/archives.css" rel='stylesheet' type="text/css"/>
+
+</head>
+<body>
 	<script>
   window.fbAsyncInit = function() {
     FB.init({
-      appId            : '1990030571318133',
-      autoLogAppEvents : true,
-      xfbml            : true,
-      version          : 'v2.11'
+      appId      : '1990030571318133',
+      xfbml      : true,
+      version    : 'v2.11'
     });
+    FB.AppEvents.logPageView();
   };
+
   (function(d, s, id){
      var js, fjs = d.getElementsByTagName(s)[0];
      if (d.getElementById(id)) {return;}
@@ -26,9 +30,6 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
-</head>
-<body>
-	
     <div id="wrapper" >
 
        {% include navbar.html %}
@@ -42,10 +43,10 @@
 
     <script src="{{site.url}}{{site.baseurl}}/js/sidebar.js"></script>
     <script src="{{site.url}}{{site.baseurl}}/js/content-pagination.js"></script>
-	< div  class = " fb-customerchat "
-  page _id= " willzhang1993 "
-  ref = " <OPTIONAL_WEBHOOK_PARAM> "
-  minimized = " false" >
-</ div >
+  <div class="fb-customerchat"
+  page_id="407301609690478"
+  ref="<OPTIONAL_WEBHOOK_PARAM>"
+  minimized="<true|false>">
+</div>
 </body>
 </html>
